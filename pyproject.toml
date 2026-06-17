@@ -1,0 +1,17 @@
+[project]
+name = "decision-brief-claim-gate"
+version = "0.1.0"
+description = "Deterministic evidence gate for synthetic public-health decision-brief claims."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Erik Rice" }]
+
+[project.scripts]
+decision-brief-gate = "decision_brief_gate.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,76 @@
+[
+  {
+    "brief_id": "BRIEF_STALE_TEXT",
+    "claim_id": "CLM_006",
+    "claim_type": "metric_value",
+    "evidence": {
+      "source_value": "1240",
+      "text_value": "1180"
+    },
+    "failure_status": "RETURN_FOR_REVISION",
+    "message": "Text value does not match source value.",
+    "packet_id": "PKT_STALE_TEXT",
+    "seeded_issue": "stale_text_value",
+    "source_metric_id": "cert_active"
+  },
+  {
+    "brief_id": "BRIEF_STALE_CHART",
+    "claim_id": "CLM_007",
+    "claim_type": "chart_text_consistency",
+    "evidence": {
+      "chart_value": "2260",
+      "source_value": "2200",
+      "text_value": "2200"
+    },
+    "failure_status": "RETURN_FOR_REVISION",
+    "message": "Chart, text, and source values do not agree.",
+    "packet_id": "PKT_STALE_CHART",
+    "seeded_issue": "stale_chart_value",
+    "source_metric_id": "service_sessions"
+  },
+  {
+    "brief_id": "BRIEF_MISSING_CAVEAT",
+    "claim_id": "CLM_008",
+    "claim_type": "required_caveat",
+    "evidence": {
+      "caveat_code_present": "",
+      "caveat_present": false,
+      "caveat_required": true,
+      "expected_caveat_code": "LATE_RECORDS_PENDING"
+    },
+    "failure_status": "RETURN_FOR_REVISION",
+    "message": "Required caveat is missing or uses the wrong code.",
+    "packet_id": "PKT_MISSING_CAVEAT",
+    "seeded_issue": "missing_caveat",
+    "source_metric_id": "enrollment_total"
+  },
+  {
+    "brief_id": "BRIEF_STALE_SOURCE",
+    "claim_id": "CLM_009",
+    "claim_type": "source_version",
+    "evidence": {
+      "claim_source_table_version": "V2026_05",
+      "current_source_table_version": "V2026_06",
+      "metric_source_table_version": "V2026_06"
+    },
+    "failure_status": "BLOCK_RELEASE",
+    "message": "Claim does not use the current source table version.",
+    "packet_id": "PKT_STALE_SOURCE",
+    "seeded_issue": "stale_source_version",
+    "source_metric_id": "completion_rate"
+  },
+  {
+    "brief_id": "BRIEF_WRONG_TREND",
+    "claim_id": "CLM_010",
+    "claim_type": "trend_direction",
+    "evidence": {
+      "source_trend_direction": "flat",
+      "stated_trend_direction": "increase"
+    },
+    "failure_status": "RETURN_FOR_REVISION",
+    "message": "Stated trend does not match source-derived trend.",
+    "packet_id": "PKT_WRONG_TREND",
+    "seeded_issue": "wrong_trend",
+    "source_metric_id": "outreach_contacts"
+  }
+]

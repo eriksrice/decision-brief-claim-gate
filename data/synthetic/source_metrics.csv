@@ -1,0 +1,7 @@
+source_metric_id,source_table_version,metric_name,reporting_period,source_value,prior_source_value,trend_direction,caveat_required,required_caveat_code
+cert_active,V2026_06,Active certifications,2026-W24,1240,1200,increase,true,PRELIMINARY_SNAPSHOT
+outreach_contacts,V2026_06,Outreach contacts,2026-W24,410,405,flat,false,
+enrollment_total,V2026_06,Enrollment total,2026-W24,980,970,increase,true,LATE_RECORDS_PENDING
+service_sessions,V2026_06,Service sessions,2026-W24,2200,2260,decrease,false,
+completion_rate,V2026_06,Claim completion rate,2026-W24,0.82,0.78,increase,true,SMALL_DENOMINATOR
+

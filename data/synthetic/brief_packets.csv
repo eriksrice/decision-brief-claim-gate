@@ -1,0 +1,12 @@
+packet_id,brief_id,claim_id,claim_type,source_metric_id,source_table_version,source_value,chart_value,text_value,stated_trend_direction,caveat_required,caveat_present,caveat_code_present,expected_review_status,seeded_issue
+PKT_CLEAN,BRIEF_CLEAN,CLM_001,metric_value,cert_active,V2026_06,1240,1240,1240,,true,true,PRELIMINARY_SNAPSHOT,PASS,none
+PKT_CLEAN,BRIEF_CLEAN,CLM_002,trend_direction,outreach_contacts,V2026_06,410,410,410,flat,false,false,,PASS,none
+PKT_CLEAN,BRIEF_CLEAN,CLM_003,required_caveat,enrollment_total,V2026_06,980,980,980,,true,true,LATE_RECORDS_PENDING,PASS,none
+PKT_CLEAN,BRIEF_CLEAN,CLM_004,chart_text_consistency,service_sessions,V2026_06,2200,2200,2200,,false,false,,PASS,none
+PKT_CLEAN,BRIEF_CLEAN,CLM_005,source_version,completion_rate,V2026_06,0.82,0.82,0.82,,true,true,SMALL_DENOMINATOR,PASS,none
+PKT_STALE_TEXT,BRIEF_STALE_TEXT,CLM_006,metric_value,cert_active,V2026_06,1240,1240,1180,,true,true,PRELIMINARY_SNAPSHOT,RETURN_FOR_REVISION,stale_text_value
+PKT_STALE_CHART,BRIEF_STALE_CHART,CLM_007,chart_text_consistency,service_sessions,V2026_06,2200,2260,2200,,false,false,,RETURN_FOR_REVISION,stale_chart_value
+PKT_MISSING_CAVEAT,BRIEF_MISSING_CAVEAT,CLM_008,required_caveat,enrollment_total,V2026_06,980,980,980,,true,false,,RETURN_FOR_REVISION,missing_caveat
+PKT_STALE_SOURCE,BRIEF_STALE_SOURCE,CLM_009,source_version,completion_rate,V2026_05,0.82,0.82,0.82,,true,true,SMALL_DENOMINATOR,BLOCK_RELEASE,stale_source_version
+PKT_WRONG_TREND,BRIEF_WRONG_TREND,CLM_010,trend_direction,outreach_contacts,V2026_06,410,410,410,increase,false,false,,RETURN_FOR_REVISION,wrong_trend
+

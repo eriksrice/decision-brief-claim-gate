@@ -1,0 +1,14 @@
+{
+  "accuracy": 1.0,
+  "correct_count": 6,
+  "mismatches": [],
+  "packet_count": 6,
+  "prediction_source": "gate_output",
+  "self_comparison_guard": "PASS",
+  "self_comparison_probe_detected": true,
+  "status_counts": {
+    "BLOCK_RELEASE": 1,
+    "PASS": 1,
+    "RETURN_FOR_REVISION": 4
+  }
+}

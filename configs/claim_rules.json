@@ -1,0 +1,10 @@
+{
+  "current_source_table_version": "V2026_06",
+  "numeric_tolerance": 0.000001,
+  "missing_caveat_policy": "RETURN_FOR_REVISION",
+  "stale_source_version_policy": "BLOCK_RELEASE",
+  "trend_mismatch_policy": "RETURN_FOR_REVISION",
+  "chart_text_mismatch_policy": "RETURN_FOR_REVISION",
+  "metric_value_mismatch_policy": "RETURN_FOR_REVISION"
+}
+
