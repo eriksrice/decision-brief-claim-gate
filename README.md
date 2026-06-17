@@ -1,5 +1,7 @@
 # Decision Brief Claim Consistency Gate
 
+[![CI](https://github.com/eriksrice/decision-brief-claim-gate/actions/workflows/ci.yml/badge.svg)](https://github.com/eriksrice/decision-brief-claim-gate/actions/workflows/ci.yml)
+
 Deterministic release gate for synthetic public-health decision briefs. It blocks a brief when structured claims, chart values, source snapshots, or required caveats no longer match the evidence.
 
 ## Reviewer Snapshot
